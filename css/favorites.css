@@ -1,0 +1,139 @@
+/* Zander Spies u25033931 */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:wght@400;600;700&display=swap');
+
+body 
+{
+    background-color: #6aa2fd;
+    font-family: "Archivo Black", sans-serif;
+    margin: 0;
+}
+
+
+.plane-card 
+{
+    background-color: #ddeeff;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.plane-img
+{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ddeeff;
+    font-size: 44px;
+}
+
+.plane-card img 
+{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.plane-card-body 
+{
+    padding: 14px 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.plane-manufacturer 
+{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #4a6fa5;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+}
+
+.plane-model 
+{
+    font-size: 18px;
+    color: #202656;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.plane-meta 
+{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.meta-chip 
+{
+    background-color: #c4def9;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #202656;
+}
+
+.plane-card-footer 
+{
+    display: flex;
+    gap: 8px;
+    padding: 10px 18px 14px;
+}
+
+.btn-view 
+{
+    flex: 1;
+    padding: 9px;
+    background-color: #202656;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.btn-remove 
+{
+    padding: 9px 14px;
+    background-color: transparent;
+    border: 2px solid #cc2222;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #cc2222;
+    font-family: "Archivo Black", sans-serif;
+    transition: background 0.2s, color 0.2s;
+}
+
+#planes-grid {
+    display: grid;
+    /* This ensures they wrap to the next line correctly */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 30px;
+    padding: 40px;
+    width: 100%;
+    /* This ensures the grid grows as more planes are added */
+    min-height: 100vh; 
+    align-content: start;
+    box-sizing: border-box;
+}
+
+/* Add this to favorites.css */
+.btn-fav.active-fav {
+    background-color: #202656;
+    color: #ffd700; /* Gold Star */
+    border-color: #ffd700;
+}

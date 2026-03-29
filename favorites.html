@@ -1,0 +1,44 @@
+<!--Zander Spies u25033931-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Favorites</title>
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
+        <link rel="stylesheet" type="text/css" href="css/favorites.css">
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <ul>
+                    <li class="logoBox">
+                        <img src="img/logo.png" alt="Global Gate Logo" class="logo">
+                        <span class="name">Global Gate</span>
+                    </li>
+                    <li class="linksBox">
+                        <a href="index.html">Home</a>
+                        <a href="bookings.html">Bookings</a>
+                        <a href="planes.html">Planes</a>
+                        <a href="favorites.html" id="active">Favorites</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="planes-grid"></div>
+        </main>
+
+        <div id="loading-container" style="display: none;">
+            <img src="img/loader_v2.gif" alt="Loading...">
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="JS/ajax.js"></script>
+        <script>
+            window.onload = loadFavorites;
+        </script>
+    </body>
+</html>

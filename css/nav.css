@@ -1,0 +1,68 @@
+/* Zander Spies u25033931 */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#navbar {
+    background-color: #88b4fa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#navbar .logoBox {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+#navbar .logo {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+
+#navbar .name {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    color: #202656;
+}
+
+#navbar .linksBox {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    list-style: none;
+    margin-right: 40px;
+}
+
+#navbar .linksBox a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #202656;
+    border-radius: 15px;
+    color: azure;
+    text-decoration: none;
+}
+
+#navbar .linksBox a#active {
+    border: solid rgb(9, 72, 120) 5px;
+}
+
+body {
+    margin: 0;
+}
