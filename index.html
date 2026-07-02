@@ -1,89 +1,77 @@
 <!--Zander Spies u25033931-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Book Flights</title>
-        <link rel="stylesheet" type="text/css" href="css/nav.css">
-        <link rel="stylesheet" type="text/css" href="css/home.css">
-        <link rel="icon" type="image/x-icon" href="img/logo.png">
-    </head>
-    <body>
-        <header>
-            <nav id="navbar">
-                <ul>
-                    <li class="logoBox">
-                        <img src="img/logo.png" alt="Global Gate Logo" class="logo">
-                        <span class="name">Global Gate</span>
-                    </li>
-                    <li class="linksBox">
-                        <a href="index.html" id="active">Home</a>
-                        <a href="bookings.html">Bookings</a>
-                        <a href="planes.html">Planes</a>
-                        <a href="favorites.html">Favorites</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+    html
+    {
+      text-align: center;
+      font-size: 20px;
+    }
+    #heading
+    {
+      font-family: "Archivo Black", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 70px;
+      margin: 0;
+      color: #202656;
+    }
+    #PracButtons
+    {
+      padding-left: 0px;
+    }
+    #PracButtons li
+    {
+      list-style-type: none;
+      padding: 10px 0px 10px 0px;
+      display: inline;
+      
+    }
+    #PracButtons li a
+    {
+      text-decoration: none;
+      color: black;
+      border: solid 2px black;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    #PracButtons li a:hover
+    {
+      color: #202656;
+      padding: 10px;
+      font-size: 25px;
+    }
+    #PracButtons li a:active
+    {
+      color: red;
+    }
+    #logo
+    {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Gate</title>
+  <link rel="icon" type="image/x-icon" href="COS216/PA1/img/logo.png">
+</head>
 
-        <form action="bookings.html">
-
-            <label>Select an aircraft:</label>
-            <div class="autocomplete-wrapper">
-                <input type="text" id="plane-search-input" placeholder="Search by model..." autocomplete="off">
-                <ul id="plane-suggestions"></ul>
-            </div>
-
-            <br/>
-
-            <label>Airport search:</label>
-            <input type="text" id="airport-search" placeholder="Search by name, city, country or code...">
-
-            <br/>
-
-            <label>Departure airport:</label>
-            <select id="departure-selection" size="5" required>
-                <option disabled selected>Loading airports...</option>
-            </select>
-            <input type="date" id="departure-date">
-
-            <br/>
-
-            <label>Arrival airport:</label>
-            <select id="arrival-selection" size="5" required>
-                <option disabled selected>Loading airports...</option>
-            </select>
-            <input type="date" id="arrival-date">
-
-            <br/>
-
-            <label>Return flight:</label>
-            <input type="checkbox" id="return-flight">
-
-            <br/>
-
-            <label>Passengers:</label>
-            <input type="number" id="passengers" min="1" value="1">
-
-            <br/>
-
-            <label>Cabin Class</label>
-            <select id="cabin-class-selection" disabled>
-                <option disabled selected>Select an aircraft first</option>
-            </select>
-
-            <br/>
-
-            <input type="submit" value="Book Flight">
-        </form>
-
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="JS/ajax.js"></script>
-        <script>
-            window.onload = function() {
-                initBookFlightPage();
-            };
-        </script>
-    </body>
+<body>
+  <header>
+    <nav>
+      <img src="COS216/PA1/img/logo.png" id="logo" alt="Global Gate Logo">
+      <p id="heading"> Global Gate </p>
+      <ul id="PracButtons">
+        <li><a href="COS216/PA1/index.html">PA1</a></li>
+        <li><a href="COS216/PA2/index.html">PA2</a></li>
+        <li><a href="COS216/PA3/index.php">PA3</a></li>
+        <li><a href="COS216/PA4/index.php">PA4</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+</body>
 </html>
